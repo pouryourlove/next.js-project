@@ -1,8 +1,18 @@
+import Heading from "@/components/Heading";
+import Link from "next/link";
+
 export default function PostPage() {
   return (
     <>
-      <h1>Posts</h1>
-      <p>Here we'll list all the posts</p>
+      <Heading>Posts</Heading>
+      <ul>
+        <li>
+          <Link href="/posts/appearance">Apperance</Link>
+        </li>
+        <li>
+          <Link href="./posts/favorites">Favorites</Link>
+        </li>
+      </ul>
     </>
   );
 }

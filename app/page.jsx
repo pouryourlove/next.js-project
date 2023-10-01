@@ -1,9 +1,10 @@
 "use client";
+import Heading from "@/components/Heading";
 
 export default function HomePage() {
   return (
     <>
-      <h1>Zzong's day of the day</h1>
+      <Heading>Zzong's day of the day</Heading>
       <p>A daily post about my beloved dog.</p>
     </>
   );
