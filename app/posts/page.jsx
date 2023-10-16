@@ -4,20 +4,34 @@ import Link from "next/link";
 export default function PostPage() {
   return (
     <>
-<<<<<<< HEAD
-      <h1>Posts</h1>
-     
-=======
       <Heading>Posts</Heading>
-      <ul>
-        <li>
-          <Link href="/posts/appearance">Apperance</Link>
+      <ul className="flex flex-col gap-3">
+        <li className="bg-white border rounded shadow w-80 hover:shadow-xl">
+          <Link href="/posts/appearance">
+            <img
+              src="/images/doggie.jpg"
+              alt=""
+              width="320"
+              height="180"
+              className="rounded-t"
+            />
+            <h2 className="py-1 text-center">Apperance</h2>
+          </Link>
         </li>
-        <li>
-          <Link href="./posts/favorites">Favorites</Link>
+        <li className="bg-white border rounded shadow w-80 hover:shadow-xl">
+          <Link href="./posts/favorites">
+            <img
+              src="/images/doggie2.jpg"
+              alt=""
+              width="320"
+              height="180"
+              className="rounded-t"
+            />
+
+            <h2 className="py-1 text-center">Favorites</h2>
+          </Link>
         </li>
       </ul>
->>>>>>> 2502881974a2828ebad5c20dd65b1c6f95867889
     </>
   );
 }
