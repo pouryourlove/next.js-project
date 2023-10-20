@@ -21,7 +21,7 @@ export default function PostPage() {
           </Link>
         </li>
         <li className="bg-white border rounded shadow w-80 hover:shadow-xl">
-          <Link href="./posts/favorites">
+          <Link href="/posts/favorites">
             <img
               src="/images/doggie2.jpg"
               alt=""
