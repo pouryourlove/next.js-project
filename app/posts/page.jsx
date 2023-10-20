@@ -1,6 +1,8 @@
 import Heading from "@/components/Heading";
 import Link from "next/link";
 
+
+
 export default function PostPage() {
   return (
     <>
@@ -15,7 +17,7 @@ export default function PostPage() {
               height="180"
               className="rounded-t"
             />
-            <h2 className="py-1 text-center">Apperance</h2>
+            <h2 className="py-1 text-center font-semibold font-roboto_slab">Apperance</h2>
           </Link>
         </li>
         <li className="bg-white border rounded shadow w-80 hover:shadow-xl">
@@ -28,7 +30,7 @@ export default function PostPage() {
               className="rounded-t"
             />
 
-            <h2 className="py-1 text-center">Favorites</h2>
+            <h2 className="py-1 text-center font-semibold font-roboto_slab">Favorites</h2>
           </Link>
         </li>
       </ul>

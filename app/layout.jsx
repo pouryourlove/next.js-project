@@ -1,9 +1,10 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
+import { exo_2, roboto_slab } from "./fonts";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${roboto_slab.variable} ${exo_2.variable}`}>
       <body className=" bg-orange-50 flex flex-col px-4 py-2 min-h-screen">
         <header>
           <NavBar />

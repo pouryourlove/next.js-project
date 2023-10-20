@@ -6,11 +6,11 @@ function NavBar() {
       <nav>
         <ul className="flex gap-2">
           <li>
-            <Link href="/" className="text-orange-800  hover:underline">
+            <Link href="/" className="text-orange-800  hover:underline font-roboto_slab font-bold">
               Home
             </Link>
           </li>
-          <li>
+          <li className="ml-auto">
             <Link href="/posts" className="text-orange-800 hover:underline">
               Posts
             </Link>
