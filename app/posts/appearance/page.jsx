@@ -1,6 +1,9 @@
 import Heading from "@/components/Heading";
+import {readFile} from 'node:fs/promises'
 
-export default function Appearance() {
+export default async function Appearance() {
+  const text = await readFile('./content/posts/appearance.md','utf8')
+  
   return (
     <>
       <Heading>Her appearance</Heading>
@@ -11,7 +14,7 @@ export default function Appearance() {
         height="360"
         className="mb-2 rounded"
       />
-      <p>Here we'll talk about what she looks like</p>
+      <p>{text}</p>
     </>
   );
 }
