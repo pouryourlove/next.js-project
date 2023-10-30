@@ -3,6 +3,7 @@ import Heading from "@/components/Heading";
 import Link from "next/link";
 
 
+
 export default function HomePage() {
   return (
     <>
@@ -23,7 +24,7 @@ export default function HomePage() {
             <h2 className="py-1 text-center font-semibold font-roboto_slab">Favorites</h2>
           </Link>
         </div>
-    
-    </>
+        </>
+   
   );
 }

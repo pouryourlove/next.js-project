@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
           <NavBar />
         </header>
         <main className="grow py-3">{children}</main>
-        <footer className="border-t py-3 text-center text-xs">[footer]</footer>
+        <footer className="border-t py-3 text-center text-xs text-slate-500">This is a footer</footer>
       </body>
     </html>
   );
