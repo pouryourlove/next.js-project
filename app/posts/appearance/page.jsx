@@ -1,16 +1,21 @@
 import Heading from "@/components/Heading";
 import {readFile} from 'node:fs/promises'
+import matter from "gray-matter"
 import  {marked}  from "marked";
 
 export default async function Appearance() {
   const text = await readFile('./content/posts/appearance.md','utf8')
-  const html= marked(text)
+  const { content,data: {title,date,image} } = matter(text)
+  const html= marked(content,text)
+
+
   
   return (
     <>
-      <Heading>Her appearance</Heading>
+      <Heading>{title}</Heading>
+      <p className="italic pb-2">{date}</p>
       <img
-        src="/images/doggie.jpg"
+        src={image}
         alt=""
         width="640"
         height="360"
