@@ -3,8 +3,8 @@ import {getReview} from "@/lib/reviews"
 
 
 
-export default async function Appearance() {
-  const review = await getReview('appearance')
+export default async function ReviewPage({params:{slug}}) {
+  const review = await getReview(slug)
 
   
   return (

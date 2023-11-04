@@ -1,9 +1,11 @@
 import Heading from "@/components/Heading";
 import Link from "next/link";
+import { getReviews } from "@/lib/reviews";
 
 
+export default async  function PostPage() {
+  const reviews = await getReviews()
 
-export default function PostPage() {
   return (
     <>
       <Heading>Posts</Heading>
